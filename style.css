@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+:root {
+    --ff-roboto:'Roboto', sans-serif;
+
+    --clr-h-dark: #1F2937;
+    --clr-h-main-text: #F9FAF8;
+    --clr-h-secondary-text: #E5E7EB;
+    --clr-h-logo: #F9FAF8;
+    --clr-cta-btn: #3882F6;
+    --clr-info-header: #1F2937;
+    --clr-quote-bg: #E5E7EB;
+    --clr-quote-text: #1F2937;
+    
+    --fw-regular: 400;
+    --fw-bold: 900;
+    --fw-italic: 300;
+
+    --fs-18: 18px;
+    --fs-24: 24px;
+    --fs-36: 36px;
+    --fs-48: 48px;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Screen reader
+  */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* .visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  } */
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: Roboto;
+  }
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    gap: 1rem;
+  }
+
+  header {
+    background-color: var(--clr-h-dark);
+    color: var(--clr-h-secondary-text);
+    padding: 2rem 0;
+  }
+
+  .page__nav{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  nav a {
+    color: var(--clr-h-secondary-text);
+  }
+
+  .intro-btn {
+    background-color: var(--clr-cta-btn);
+    color: var(--clr-h-logo);
+    padding: .3em .8em;
+    border-radius: .4em;
+    border: none;
+  }
+
+  footer {
+    text-align: center;
+  }
